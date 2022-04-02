@@ -8,7 +8,7 @@ const NavbarComponent = () => {
 
   return (
     <>
-      <Navbar bg='white' variant='light' className='shadow py-3' expand='lg'>
+      <Navbar bg='white' variant='light' className='shadow py-3 fixed-top' expand='lg'>
         <Container>
           <Navbar.Brand href='#home' style={{ fontWeight: 'bold' }}>
             Pellerano

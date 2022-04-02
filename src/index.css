@@ -4,6 +4,7 @@
   --orange-main: #ffa05c;
   --whatsapp: #00a884;
   --email-gradient: linear-gradient(229.51deg, #1d74f2 17.39%, #1ac3fb 85.67%);
+  --profile-gradient: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(255, 160, 92, 1) 100%);
 }
 
 body {
