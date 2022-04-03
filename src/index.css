@@ -5,6 +5,9 @@
   --whatsapp: #00a884;
   --email-gradient: linear-gradient(229.51deg, #1d74f2 17.39%, #1ac3fb 85.67%);
   --profile-gradient: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(255, 160, 92, 1) 100%);
+  --newtech-bg: #17a38c;
+  --mr-bg: #072736;
+  --alorica-bg: #f58025;
 }
 
 body {
@@ -16,4 +19,28 @@ body {
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+@media only screen and (max-width: 991px) {
+  .custom-card {
+    flex-direction: column !important;
+    align-items: center;
+  }
+
+  .company-profile-pic {
+    margin-bottom: 1rem;
+  }
+
+  .job-info {
+    padding: 0;
+  }
+
+  .job-info-row {
+    flex-direction: column !important;
+    align-items: center;
+  }
+
+  .job-info-row > * {
+    margin-bottom: 1rem !important;
+  }
 }
