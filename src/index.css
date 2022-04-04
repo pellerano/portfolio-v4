@@ -21,6 +21,18 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
+.bg-web-dev {
+  background-color: #ff7e36 !important;
+}
+
+.bg-ux-ui {
+  background-color: #018f8c !important;
+}
+
+.bg-graphic-design {
+  background-color: #f9bf51 !important;
+}
+
 @media only screen and (max-width: 991px) {
   .custom-card {
     flex-direction: column !important;

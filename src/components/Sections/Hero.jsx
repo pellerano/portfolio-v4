@@ -2,7 +2,6 @@ const Hero = () => {
   return (
     <div className='jumbotron jumbotron-fluid d-flex justify-content-center'>
       <div className='container d-flex justify-content-center align-items-center flex-column p-5'>
-        {/* <img src='assets/images/IMG_9549.jpg' alt='...' class='rounded-circle' /> */}
         <div
           className='rounded-circle d-flex align-items-center justify-content-center mb-3'
           style={{

@@ -1,3 +1,5 @@
+import Hero from './Hero';
 import About from './About';
 import Experience from './Experience';
-export { About, Experience };
+import Portfolio from './Portfolio';
+export { Hero, About, Experience, Portfolio };
