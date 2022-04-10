@@ -15,6 +15,7 @@ body {
   font-family: 'Montserrat', sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
 }
 
 code {
@@ -33,7 +34,15 @@ code {
   background-color: #f9bf51 !important;
 }
 
+.job-info-text {
+  margin: 0;
+}
+
 @media only screen and (max-width: 991px) {
+  .card {
+    margin: auto;
+  }
+
   .custom-card {
     flex-direction: column !important;
     align-items: center;
@@ -44,7 +53,8 @@ code {
   }
 
   .job-info {
-    padding: 0;
+    padding: 0 !important;
+    text-align: center;
   }
 
   .job-info-row {
@@ -52,7 +62,7 @@ code {
     align-items: center;
   }
 
-  .job-info-row > * {
+  .job-info-text {
     margin-bottom: 1rem !important;
   }
 }

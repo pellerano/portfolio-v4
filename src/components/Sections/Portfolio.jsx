@@ -1,8 +1,11 @@
 import ProjectCard from '../../common/ProjectCard';
 import SectionContainer from '../../common/SectionContainer';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
+import { useEffect, useState } from 'react';
 
 const Portfolio = () => {
+  const [itemsPerPage, setItemsPerPage] = useState(4);
+
   const projects = [
     {
       title: 'Cristian Tejeda',
@@ -40,9 +43,30 @@ const Portfolio = () => {
     },
   ];
 
+  useEffect(() => {
+    window.addEventListener('load', () => {
+      window.innerWidth <= 768
+        ? setItemsPerPage(1)
+        : window.innerWidth <= 991
+        ? setItemsPerPage(2)
+        : window.innerWidth <= 1400
+        ? setItemsPerPage(3)
+        : setItemsPerPage(4);
+    });
+    window.addEventListener('resize', () => {
+      window.innerWidth <= 768
+        ? setItemsPerPage(1)
+        : window.innerWidth <= 991
+        ? setItemsPerPage(2)
+        : window.innerWidth <= 1400
+        ? setItemsPerPage(3)
+        : setItemsPerPage(4);
+    });
+  }, []);
+
   return (
     <SectionContainer title='Portfolio' noMarginBottom={true}>
-      <Splide options={{ perPage: 4, type: 'loop', autoplay: 'play' }}>
+      <Splide options={{ perPage: itemsPerPage, type: 'loop' }}>
         {projects.map((project, key) => {
           return (
             <SplideSlide key={key}>

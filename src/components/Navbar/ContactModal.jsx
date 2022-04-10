@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Whatsapp, EnvelopeFill } from 'react-bootstrap-icons';
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
@@ -16,7 +17,7 @@ const ContactModal = () => {
     <>
       <Button
         variant='white'
-        className='shadow rounded-pill w-50 nav-link mx-auto px-3'
+        className='shadow rounded-pill w-50 nav-link mx-auto px-3 text-black'
         style={{ fontWeight: '500' }}
         onClick={() => handleShow()}
       >
@@ -36,8 +37,9 @@ const ContactModal = () => {
               variant='primary'
               size='lg'
               style={{ backgroundColor: 'var(--whatsapp)' }}
+              onClick={() => window.open('https://wa.me/+18299431520', '_blank')}
             >
-              Whatsapp
+              <Whatsapp size={35} />
             </Button>
             <div className='vr mx-5'></div>
             <Button
@@ -45,8 +47,9 @@ const ContactModal = () => {
               variant='primary'
               size='lg'
               style={{ backgroundImage: 'var(--email-gradient)' }}
+              onClick={() => (window.location.href = 'mailto:contact@pellerano.dev')}
             >
-              Email
+              <EnvelopeFill size={35} />
             </Button>
           </Container>
         </Modal.Body>

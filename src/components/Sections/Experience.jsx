@@ -61,16 +61,16 @@ const Experience = () => {
                 />
                 <div className='w-100 job-info' style={{ paddingLeft: '1rem' }}>
                   <div className='d-flex justify-content-between m-0 job-info-row'>
-                    <h4 className='m-0' style={{ fontWeight: 'bold' }}>
+                    <h4 className='job-info-text' style={{ fontWeight: 'bold' }}>
                       {job.title}
                     </h4>
-                    <h5 className='m-0' style={{ color: 'var(--orange-main)' }}>
+                    <h5 className='job-info-text' style={{ color: 'var(--orange-main)' }}>
                       {job.time}
                     </h5>
                   </div>
                   <div className='d-flex justify-content-between m-0 job-info-row'>
-                    <h5 className='m-0'>{job.company}</h5>
-                    <h5 className='m-0'>{job.location}</h5>
+                    <h5 className='job-info-text'>{job.company}</h5>
+                    <h5 className='job-info-text'>{job.location}</h5>
                   </div>
                 </div>
               </div>
