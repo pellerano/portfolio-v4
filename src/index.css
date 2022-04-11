@@ -38,6 +38,41 @@ code {
   margin: 0;
 }
 
+.gh-body {
+  font: 400 16px/1.5 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #111;
+  background-color: #fdfdfd;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-feature-settings: 'kern' 1;
+  -moz-font-feature-settings: 'kern' 1;
+  -o-font-feature-settings: 'kern' 1;
+  font-feature-settings: 'kern' 1;
+  font-kerning: normal;
+  padding: 30px;
+  border: 1px solid #e1e4e8;
+  border-radius: 2px;
+}
+
+.gh-body a {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+.gh-body a:visited {
+  color: #0366d6;
+}
+
+.gh-body a:hover {
+  color: #0366d6;
+  text-decoration: underline;
+}
+
+.gh-body h1 {
+  border-bottom: 1px solid #eaecef;
+  color: #111;
+  /* Darker */
+}
+
 @media only screen and (max-width: 991px) {
   .card {
     margin: auto;

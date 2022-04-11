@@ -65,7 +65,7 @@ const Portfolio = () => {
   }, []);
 
   return (
-    <SectionContainer title='Portfolio' noMarginBottom={true}>
+    <SectionContainer title='Portfolio'>
       <Splide options={{ perPage: itemsPerPage, type: 'loop' }}>
         {projects.map((project, key) => {
           return (
