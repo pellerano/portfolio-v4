@@ -40,7 +40,11 @@ const App = () => {
 
   - Added Changelog Section to showcase portfolio evolution.
 
-  #### v4.2 - Coming Soon
+  #### v4.2 - Released Jul 12, 2022
+  
+  - Added additional/current work experience.
+  
+  #### v4.3 - Coming Soon
   
   - Project modal to display more info on projects in the portfolio section.
   

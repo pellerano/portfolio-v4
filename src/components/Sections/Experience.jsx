@@ -4,6 +4,18 @@ import Card from 'react-bootstrap/Card';
 const Experience = () => {
   const jobs = [
     {
+      title: 'Back End Developer',
+      company: 'Alcancia • Part-time',
+      time: 'Apr 2022 - Present',
+      location: 'Santo Domingo, Dominican Republic',
+      logoUrl: '/assets/images/alcancia_logo.png',
+      bgStyle: {
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center',
+      },
+    },
+    {
       title: 'Software Development Engineer',
       company: 'Newtech Global',
       time: 'Sept 2021 - Present',
